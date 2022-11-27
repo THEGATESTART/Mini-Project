@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.expanding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.expanding .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.expanding .container .cardImage {
+  height: 80vh;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 7rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.expanding .container .cardImage .imageName .view {
+  opacity: 0;
+}
+
+.expanding .container .cardImage.active {
+  height: 80vh;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60vw;
+  cursor: pointer;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.expanding .container .cardImage.active .imageName .view {
+  position: absolute;
+  bottom: 2rem;
+  margin-left: 5rem;
+  color: white;
+  font-size: 2rem;
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in .5s;
+  transition: opacity .5s ease-in .5s;
+}
+/*# sourceMappingURL=style.css.map */
