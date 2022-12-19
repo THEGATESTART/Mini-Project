@@ -15,10 +15,12 @@ sounds.forEach(sound => {
 
 })
 
+// reset song when click another song is same time
 function stopSong() {
     sounds.forEach(sound => {
         const song = document.getElementById(sound);
         song.pause();
+        //set time audio to start audio
         song.currentTime = 0;
     })
 }
