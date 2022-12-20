@@ -1,0 +1,36 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(104, 109, 224);
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 50rem;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container h4 {
+    color: gray;
+    margin-bottom: 2rem;
+}
+.container #joke {
+    margin-bottom: 2rem;
+}
+.container #jokeBtn {
+    background-color: rgb(196, 5, 196);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+}
